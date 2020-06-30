@@ -1,0 +1,86 @@
+{% load static %}
+<div class="row topbar">
+    <div class="col s2">
+        <a class="logo-image" href="/">
+            <img src="{% static 'images/logo.png' %}" alt="logo">
+        </a>
+    </div>
+    <div class="col s9">
+        <div class="search-box">
+            <input class="search-box-input" type="text">
+            <span>
+                <img src="{% static 'images/search-icon.png' %}" alt="search">
+            </span>
+        </div>
+    </div>
+    <div class="col s1">
+        <a class="top-icon" href="#">
+            <img src="{% static 'images/user-icon.png' %}" alt="user">
+        </a>
+        <a class="top-icon" href="#">
+            <img src="{% static 'images/cart-icon.png' %}" alt="cart">
+        </a>
+    </div>
+</div>
+
+<div class="row menu">
+    <nav class="menu-nav">
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="hide-on-med-and-down custom-menu">
+            <li>
+                <a class='dropdown-trigger menu-item-1' href='#' data-target='menu-1'>HERRAMIENTAS</a>
+                <ul id='menu-1' class='dropdown-content custom-dropdown'>
+                    <div class="decoration-top"></div>
+                    <div class="decoration-bottom"></div>
+                    <li><a href="#">Herramientas eléctricas e inalámbricas</a></li>
+                    <li><a href="#">Herramientas manuales</a></li>
+                    <li><a href="#">Torquimetros</a></li>
+                    <li><a href="#">Accesorios para herramientas</a></li>
+                    <li><a href="#">Cajas y organizadores</a></li>
+                    <li><a href="#">Herramientas especiales</a></li>
+                    <li><a href="#">Equipos de protección personal</a></li>
+                    <li><a href="#">Herramientas neumáticas</a></li>
+                    <li><a href="#">Herramientas y equipos hidráulicos</a></li>
+                    <li><a href="#">Lubricación</a></li>
+                    <li><a href="#">Levantamiento</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class='dropdown-trigger menu-item-2' href='#' data-target='menu-2'>EQUIPOS</a>
+                <ul id='menu-2' class='dropdown-content custom-dropdown'>
+                    <div class="decoration-top"></div>
+                    <div class="decoration-bottom"></div>
+                    <li><a href="#">Compresores</a></li>
+                    <li><a href="#">Maquinas de soldar</a></li>
+                    <li><a href="#">Hidrolavadoras</a></li>
+                    <li><a href="#">Mantenimiento</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class='dropdown-trigger menu-item-1' href='#' data-target='menu-3'>HERRAMIENTAS ESPECIALES</a>
+                <ul id='menu-3' class='dropdown-content custom-dropdown'>
+                    <div class="decoration-top"></div>
+                    <div class="decoration-bottom"></div>
+                    <li><a href="#">Aisladas</a></li>
+                    <li><a href="#">Antichispas</a></li>
+                    <li><a href="#">Especial automotriz</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class='dropdown-trigger menu-item-2' href='#' data-target='menu-4'>EPPS</a>
+                <ul id='menu-4' class='dropdown-content custom-dropdown'>
+                    <div class="decoration-top"></div>
+                    <div class="decoration-bottom"></div>
+                    <li><a href="#">Mascarillas COVID19</a></li>
+                    <li><a href="#">Guantes</a></li>
+                    <li><a href="#">Arnés anticaida / linea de vida</a></li>
+                    <li><a href="#">Careta para soldar electrónica</a></li>
+                    <li><a href="#">Lentes de seguridad</a></li>
+                    <li><a href="#">Rodilleras</a></li>
+                </ul>
+            </li>
+            <li><a class="menu-item-1" href="#">CONTÁCTANOS</a></li>
+          </ul>
+        </div>
+      </nav>    
+</div>

@@ -1,0 +1,379 @@
+@import colors
+@import font
+body
+    background: url('/static/images/background-1.jpg')
+    background-repeat: repeat-y
+    background-size: cover
+
+.container
+    background: url('/static/images/background.jpg')
+    background-repeat: repeat-y
+    background-size: cover
+    
+.topbar
+    padding-top: 1.75rem
+    padding-bottom: 1rem
+    margin-bottom: 0 !important
+    .logo-image
+        display: block
+        padding-top: .5rem
+        padding-left: 1rem
+        width: 100%
+        img
+            width: 100%
+
+    .search-box
+        position: relative
+        .search-box-input:focus
+            box-shadow: 0 0 2px 0 $white !important
+        .search-box-input
+            background-color: $gray-input !important
+            border-radius: 30px !important
+            border-bottom: none !important
+            text-indent: 1rem
+            color: $white
+            transition: border 1s
+        span
+            position: absolute
+            top: .5rem
+            right: 1rem
+            display: block
+            width: 2rem
+            height: 2rem
+            img
+                height: 100%
+    .top-icon:first-child
+        margin-right: .75rem
+        padding-top: .5rem
+    .top-icon
+        display: inline-block;
+        img
+            height: 2rem
+
+.menu
+    background: $gray
+    margin-bottom: 0 !important
+    .menu-nav
+        line-height: 2.5rem
+        height: 2.4rem
+    .custom-menu
+        background: $gray
+        padding-left: 9%
+        padding-right: 3rem
+        display: flex
+        justify-content: space-between
+        .menu-item-1:hover, .menu-item-2:hover
+            color: $white
+            background-color: unset !important
+        .menu-item-1
+            color: $black-darker
+            font-weight: bolder
+            font-family: 'futura-ext-bold'
+            font-size: 1rem
+        .menu-item-2
+            color: $black-darker
+            font-weight: lighter
+            font-family: 'futura-medium'
+            font-size: 1rem
+
+
+.custom-dropdown::after
+    content: ' '
+    display: block
+    position: absolute
+    top: 0
+    left: -0.75rem
+    height: 100%
+    width: 5px
+    background: url('/static/images/side_bar.png')
+    background-repeat: repeat-y
+    background-position: center
+.custom-dropdown
+    background: $menu-gray !important
+    width: 330px !important
+    height: unset !important
+    top: 40px !important
+    padding-top: 1rem
+    padding-bottom: 1rem
+    margin-left: -4rem !important
+    overflow: visible !important
+    min-height: 382px !important
+    .decoration-top
+        position: absolute
+        top: .5rem
+        left: .5rem
+        display: block
+        width: 10px
+    .decoration-top::after
+        display: block
+        width: 2px
+        height: 10px
+        content: ' '
+        background: $white
+        border-radius: 50px
+        margin-top: -2px
+    .decoration-top::before
+        display: block
+        width: 10px
+        height: 2px
+        content: ' '
+        background: $white
+        border-radius: 50px
+
+    .decoration-bottom
+        position: absolute
+        bottom: .5rem
+        right: .5rem
+        display: block
+        width: 10px
+        transform: rotate(180deg)
+    .decoration-bottom::after
+        display: block
+        width: 2px
+        height: 10px
+        content: ' '
+        background: $white
+        border-radius: 50px
+        margin-top: -2px
+    .decoration-bottom::before
+        display: block
+        width: 10px
+        height: 2px
+        content: ' '
+        background: $white
+        border-radius: 50px
+    li:hover
+        background-color: unset !important
+    li
+        min-height: unset !important
+        padding-left: 1rem !important
+        a:hover
+            background-color: unset !important
+            color: $red !important
+            .badge
+                display: block
+        a
+            position: relative
+            color: $white !important
+            font-size: 1rem !important
+            padding: 5px 1rem !important
+            font-family: 'futura-medium'
+            .badge
+                position: absolute
+                top: .45rem
+                left: -1.5rem
+                font-size: 1.25rem
+                color: $red
+                display: none
+
+
+.custom-carousel
+    position: relative
+    .indicators
+        .indicator-item.active
+            &::after
+                content: ' '
+                width: 8px
+                height: 8px
+                background-color: #D50100
+                display: block
+                border-radius: 15px
+                margin: 7.5px auto
+        .indicator-item
+            background: url('/static/images/indicator_item.png')
+            background-color: unset !important
+            background-size: cover;
+            width: 1.5rem !important;
+            margin: 20px 4px !important;
+            height: 1.5rem !important;
+
+    .arrow_left
+        position: absolute
+        left: 1rem
+        top: 45%
+        z-index: 99999
+        cursor: pointer
+    .arrow_right
+        position: absolute
+        right: 1rem
+        top: 45%
+        z-index: 99999
+        cursor: pointer
+
+.m-0
+    margin: 0 !important
+.p-0
+    padding: 0 !important
+.m-1rem
+    margin-left: 1rem !important
+    margin-right: 1rem !important
+
+
+.brand-row
+    background: $gray-brands
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    padding-bottom: 4rem
+    margin-bottom: 0 !important
+    .brands
+        position: relative
+        z-index: 10
+        padding-right: 0 !important
+        .whatsapp-red-button
+            width: 130px
+            height: 130px
+            border-radius: 15px
+            background: url('/static/images/whatsapp_red.png')
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            top: -65px
+            left: 2rem
+        .title
+            text-align: right
+            overflow: hidden
+            .image-title
+                height: 2rem
+                margin-right: -5.5rem
+    .brand-images
+        display: flex
+        justify-content: space-between
+        margin-top: 2rem
+        position: relative
+        z-index: 10
+        padding-left: 2rem !important
+        padding-right: 2rem !important
+        .brand-icon
+            width: 175px
+            display: block
+            img
+                width: 100%
+    &::before
+        content: ' '
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        background: url('/static/images/background-brands-1.png')
+        background-repeat: no-repeat
+        background-size: cover
+        z-index: 1
+
+.featured-products
+    padding-left: 0 !important
+    overflow: hidden
+    padding-top: 1rem !important
+    padding-bottom: 1rem !important
+    .featured-title
+        margin-left: -8rem
+        img
+            height: 2rem
+
+.featured-products-content
+    background: $white
+    padding-top: 1rem
+    margin-top: 0 !important
+    margin-bottom: 0 !important
+    .product-type-1
+        background-color: $product-gray
+        border-top-left-radius: 50px
+        border-bottom-left-radius: 50px
+        border-top-right-radius: 25px
+        border-bottom-right-radius: 25px
+        overflow: hidden
+        margin-left: 1rem !important
+        margin-right: 1rem !important
+        .disscount-card
+            background-color: $black-60
+            border-radius: 25px
+            padding: 10% 13%
+            position: relative
+            &::after
+                content: ' '
+                display: block
+                background: url('/static/images/corner-icon.svg')
+                width: 10px
+                position: absolute
+                top: 12%
+                left: 15%
+                height: 10px
+            &::before
+                content: ' '
+                display: block
+                background: url('/static/images/corner-icon.svg')
+                width: 10px
+                position: absolute
+                bottom: 12%
+                right: 15%
+                height: 10px
+                transform: rotate(180deg)
+    .product-container
+        .product-image
+            padding: .5rem 1.9rem !important
+            text-align: center
+            img
+                height: 107px
+        .product-description
+            background-color: $gray-brands
+            border-bottom-left-radius: 25px
+            border-bottom-right-radius: 25px
+            padding: 1rem 3rem
+            .product-title-1
+                margin-top: 0 !important
+                margin-bottom: 0 !important
+                font-family: 'futura-ext-bold'
+                color: $gray
+                font-size: .9rem
+                text-align: center
+                span
+                    font-family: 'futura-heavy'
+            .product-title-2
+                margin-top: 0 !important
+                margin-bottom: 0 !important
+                font-family: 'futura-light'
+                color: $product-gray2
+                font-size: .8rem
+                text-align: center
+                span
+                    font-family: 'futura-heavy'
+            .product-price-1
+                font-family: 'futura-medium'
+                color: $product-red
+                font-size: .8rem
+                text-align: center
+                margin-top: .5rem !important
+                margin-bottom: 0 !important
+                span
+                    font-family: 'futura-bold'
+            .product-price-2
+                font-family: 'futura-medium'
+                color: $product-gray2
+                font-size: .8rem
+                text-align: center
+                margin-top: 0 !important
+                margin-bottom: 0 !important
+                span
+                    font-family: 'futura-bold'
+            .button-cart-container
+                text-align: center
+                margin-top: 1rem
+                .button-add-cart
+                    background: $gray
+                    color: $white
+                    font-family: 'futura-bold'
+                    text-align: center
+                    padding: .5rem 1rem
+                    font-size: .7rem
+                    border-radius: 50px
+.best-sellers
+    padding-right: 0 !important
+    overflow: hidden
+    padding-top: 1rem !important
+    padding-bottom: 1rem !important
+    .best-sellers-title
+        margin-right: 0
+        text-align: right
+        img
+            height: 2rem
+

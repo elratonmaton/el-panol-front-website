@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row m-0">
+        <div class="carousel carousel-slider custom-carousel">
+            <a class="carousel-item"><img src="{% static 'images/slider-1.jpg' %}"></a>
+            <a class="carousel-item"><img src="{% static 'images/slider-1.jpg' %}"></a>
+            <a class="carousel-item"><img src="{% static 'images/slider-1.jpg' %}"></a>
+            <a class="arrow_left"><img src="{% static 'images/arrow_left.png' %}"></a>
+            <a class="arrow_right"><img src="{% static 'images/arrow_right.png' %}"></a>
+        </div>
+    </div>
+    <div class="row brand-row">
+        <div class="col s12 brands">
+            <a class="btn-floating waves-effect waves-light whatsapp-red-button"></a>
+            <p class="title">
+                <img class="image-title" src="{% static 'images/brands_title.svg' %}" alt="brand-title">
+            </p>
+        </div>
+        <div class="col s12 brand-images">
+            <a class="brand-icon" href="#"><img src="{% static 'images/dewalt2.svg' %}" alt="dewalt2"></a>            
+            <a class="brand-icon" href="#"><img src="{% static 'images/wiha.svg' %}" alt="wiha"></a>            
+            <a class="brand-icon" href="#"><img src="{% static 'images/proto.svg' %}" alt="proto"></a>            
+            <a class="brand-icon" href="#"><img src="{% static 'images/urrea.svg' %}" alt="urrea"></a>            
+            <a class="brand-icon" href="#"><img src="{% static 'images/surtek.svg' %}" alt="surtek"></a>            
+            <a class="brand-icon" href="#"><img src="{% static 'images/no-brand.svg' %}" alt="no-brand"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 featured-products">
+            <p class="featured-title">
+                <img src="{% static 'images/featured_products_title.svg' %}" alt="featured_products">
+            </p>
+        </div>
+    </div>
+    <div class="row featured-products-content">
+        <div class="col s6">
+            <div class="row product-type-1">
+                <div class="col s6"></div>
+                <div class="col s6 disscount-card">
+                    <img src="{% static 'images/50_discount.svg' %}" alt="discount">
+                </div>
+            </div>
+        </div>
+        <div class="col s6 p-0">
+            <div class="row m-1rem">
+                <div class="col s6 product-container">
+                    <div class="product-image">
+                        <img src="{% static 'images/product_1.svg'%}" alt="product">
+                    </div>
+                    <div class="product-description">
+                        <p class="product-title-1"><span>ESMERIL</span> DEWALT D840</p>
+                        <p class="product-title-2">SMERIL VERSÁTIL. ADAPTABLE Y MANUAL <span>MOD. UHK JSU0098</span></p>
+                        <p class="product-price-1">PRECIO EN LÍNEA: <span>S/600.00</span></p>
+                        <p class="product-price-2">PRECIO NORMAL: <span>S/650.00</span></p>
+                        <div class="button-cart-container">
+                            <a href="#" class="button-add-cart">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 product-container">
+                    <div class="product-image">
+                        <img src="{% static 'images/product_2.svg'%}" alt="product">
+                    </div>
+                    <div class="product-description">
+                        <p class="product-title-1"><span>TALADRO</span> DEWALT D88</p>
+                        <p class="product-title-2">SMERIL VERSÁTIL. ADAPTABLE Y MANUAL <span>MOD. UHK JSU0098</span></p>
+                        <p class="product-price-1">PRECIO EN LÍNEA: <span>S/600.00</span></p>
+                        <p class="product-price-2">PRECIO NORMAL: <span>S/650.00</span></p>
+                        <div class="button-cart-container">
+                            <a href="#" class="button-add-cart">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row featured-products-content">
+        <div class="col s6 p-0">
+            <div class="row m-1rem">
+                <div class="col s6 product-container">
+                    <div class="product-image">
+                        <img src="{% static 'images/product_3.svg'%}" alt="product">
+                    </div>
+                    <div class="product-description">
+                        <p class="product-title-1"><span>ESMERIL</span> DEWALT D840</p>
+                        <p class="product-title-2">SMERIL VERSÁTIL. ADAPTABLE Y MANUAL <span>MOD. UHK JSU0098</span></p>
+                        <p class="product-price-1">PRECIO EN LÍNEA: <span>S/600.00</span></p>
+                        <p class="product-price-2">PRECIO NORMAL: <span>S/650.00</span></p>
+                        <div class="button-cart-container">
+                            <a href="#" class="button-add-cart">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 product-container">
+                    <div class="product-image">
+                        <img src="{% static 'images/product_4.svg'%}" alt="product">
+                    </div>
+                    <div class="product-description">
+                        <p class="product-title-1"><span>TALADRO</span> DEWALT D88</p>
+                        <p class="product-title-2">SMERIL VERSÁTIL. ADAPTABLE Y MANUAL <span>MOD. UHK JSU0098</span></p>
+                        <p class="product-price-1">PRECIO EN LÍNEA: <span>S/600.00</span></p>
+                        <p class="product-price-2">PRECIO NORMAL: <span>S/650.00</span></p>
+                        <div class="button-cart-container">
+                            <a href="#" class="button-add-cart">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="row product-type-1">
+                <div class="col s6"></div>
+                <div class="col s6 disscount-card">
+                    <img src="{% static 'images/50_discount.svg' %}" alt="discount">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 best-sellers">
+            <p class="best-sellers-title">
+                <img src="{% static 'images/best-sellers-title.svg' %}" alt="best-sellers">
+            </p>
+        </div>
+    </div>
+{% endblock %}
